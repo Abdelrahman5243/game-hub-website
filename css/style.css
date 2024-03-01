@@ -305,7 +305,7 @@ li {
 
 @media (max-width: 767px) {
   .landing .text h1 {
-    font-size: 28px;
+    font-size: 48px;
   }
 }
 
@@ -356,7 +356,7 @@ li {
 
 @media (max-width: 991px) {
   .landing .image {
-    display: none;
+     display: none;
   }
 }
 
