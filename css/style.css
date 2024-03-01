@@ -1566,7 +1566,7 @@ input {
   }
 }
 .Discount .info {
-  padding: 50px 24px;
+  padding: 50px;
   flex-basis: 50%;
   text-align: center;
   background: var(--main-color);
