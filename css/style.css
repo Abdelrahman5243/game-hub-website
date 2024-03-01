@@ -1566,15 +1566,15 @@ input {
   }
 }
 .Discount .info {
-  padding: 50px;
-  flex-basis: 50%;
-  text-align: center;
-  background: var(--main-color);
-  color: white;
-  background-image: url(../images/discount-background1.jpg);
-  z-index: 1;
-  animation: change-background 10s linear infinite;
-  position: relative;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    background: var(--main-color);
+    color: white;
+    background-image: url(../images/discount-background1.jpg);
+    z-index: 1;
+    animation: change-background 10s linear infinite;
+    position: relative;
 }
 @keyframes change-background {
   50% {
@@ -1598,18 +1598,19 @@ input {
   line-height: 1.6;
   font-size: 18px;
   max-width: 500px;
+  margin:auto;
 }
 .Discount .info img {
   width: 75%;
 }
 .Discount form {
-  padding: 30px;
-  flex-basis: 50%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: center;
 }
 .Discount h1 {
   font-size: 37px;
