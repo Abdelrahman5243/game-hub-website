@@ -5,8 +5,8 @@
 }
 
 :root {
-  --main-color: #2196f3;
-  --main-color-alt: #1787e0;
+  --main-color: #f32160;
+  --main-color-alt: #e01739;
   --main-transition: 0.3s;
   --main-padding-top: 100px;
   --main-padding-bottom: 100px;
@@ -356,7 +356,7 @@ li {
 
 @media (max-width: 991px) {
   .landing .image {
-     display: none;
+    display: none;
   }
 }
 
@@ -1051,19 +1051,19 @@ background-size: 40px 40px;
   position: relative;
   width: 100%;
   height: 30px;
-  background: linear-gradient(to right, var(--main-color) 60%, #e7e7e7 40%);
+  background: linear-gradient(to right, var(--main-color) 60%, transparent 40%);
 }
 .html-process .process {
-  background: linear-gradient(to right, var(--main-color) 75%, #e7e7e7 25%);
+  background: linear-gradient(to right, var(--main-color) 75%, transparent 25%);
 }
 .CSS-process .process {
-  background: linear-gradient(to right, var(--main-color) 85%, #e7e7e7 15%);
+  background: linear-gradient(to right, var(--main-color) 85%, transparent 15%);
 }
 .JavaScript-process .process {
-  background: linear-gradient(to right, var(--main-color) 80%, #e7e7e7 20%);
+  background: linear-gradient(to right, var(--main-color) 80%, transparent 20%);
 }
 .Java-process .process {
-  background: linear-gradient(to right, var(--main-color) 85%, #e7e7e7 15%);
+  background: linear-gradient(to right, var(--main-color) 85%, transparent 15%);
 }
 .skills .process::after {
   content: attr(data-width);
@@ -1550,6 +1550,17 @@ input {
   display: block;
   margin-bottom: 10px;
 }
+
+/* Skills Animation */
+.skills .process {
+  width: 0; /* Start with width 0 */
+  transition: width 1s ease-out;
+}
+
+.skills .process.show {
+  width: var(--data-width);
+}
+
 /* end Our Awesome Stats*/
 /* start Discount form*/
 .Discount {
@@ -1566,15 +1577,15 @@ input {
   }
 }
 .Discount .info {
-    padding: 50px;
-    width: 100%;
-    text-align: center;
-    background: var(--main-color);
-    color: white;
-    background-image: url(../images/discount-background1.jpg);
-    z-index: 1;
-    animation: change-background 10s linear infinite;
-    position: relative;
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+  background: var(--main-color);
+  color: white;
+  background-image: url(../images/discount-background1.jpg);
+  z-index: 1;
+  animation: change-background 10s linear infinite;
+  position: relative;
 }
 @keyframes change-background {
   50% {
@@ -1598,19 +1609,19 @@ input {
   line-height: 1.6;
   font-size: 18px;
   max-width: 500px;
-  margin:auto;
+  margin: auto;
 }
 .Discount .info img {
   width: 75%;
 }
 .Discount form {
-    padding: 30px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    align-items: center;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  align-items: center;
 }
 .Discount h1 {
   font-size: 37px;
